@@ -1,0 +1,472 @@
+/* Styles */
+
+:root {
+    --background-dk: #001219;
+    --color-1: #005F73;
+    --color-2: #0A9396;
+    --color-3: #94D2BD;
+    --color-4: #E9D8A6;
+    --color-5: #EE9B00;
+    --color-6: #CA6702;
+    --color-7: #AE2012;
+    --color-8: #9B2226;
+
+    --color-5-transparent: rgba(238, 155, 0, 0.3);
+    --color-8-transparent: rgba(155, 34, 38, 0.8);
+}
+
+body {
+    font-family: "Bebas Neue", serif !important;
+    font-family: "Marcellus", serif;
+    background-color: var(--background-dk) !important;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Home Page */
+
+.header-line {
+    font-size: 1.2em;
+    background-color: var(--color-4) !important;
+    color: var(--color-4);
+}
+
+.title {
+    font-family: "Bebas Neue", serif !important;
+    font-size: 15em !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    padding: 0 2em;
+    gap: 50px; 
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    background: linear-gradient(0deg, var(--color-1), var(--color-4)) !important;
+    border-radius: 3px !important;
+    padding: 7px 7px !important;
+    text-decoration: none !important;
+    color: var(--background-dk);
+    font-family: "Marcellus", serif !important;
+    font-size: 3em !important;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    width: 400px;
+}
+
+.nav-button:hover {
+    background: linear-gradient(0deg, var(--color-8), var(--color-5)) !important;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 3px var(--color-8-transparent) !important;
+}
+
+/* Karma Page */
+
+h1 {
+    font-family: "Bebas Neue", serif !important;
+    font-size: 10em !important;
+    display: flex;
+    justify-content: center;
+    color: var(--color-3) !important;
+}
+
+hr {
+    border: 5px solid var(--color-4) !important;
+    height: 1px;
+    opacity: 1 !important;
+}
+
+h2 {
+    font-family: "Bebas Neue", serif !important;
+    font-size: 10em !important;
+    display: flex;
+    justify-content: center;
+    color: var(--color-4) !important;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+section h2 {
+    font-size: 7em !important;
+    display: flex;
+    justify-content: center;
+    color: var(--color-4) !important;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* Gradient Text */
+
+.gradient-aetherflame {
+    font-family: "Bebas Neue", serif !important;
+    font-weight: 100 !important;
+    background: linear-gradient(0deg, var(--color-1), var(--color-4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-netherflame {
+    font-family: "Bebas Neue", serif !important;
+    font-weight: 100 !important;
+    background: linear-gradient(0deg, var(--color-8), var(--color-5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-netherflame-2 {
+    font-family: "Marcellus", serif !important;
+    font-weight: 100 !important;
+    background: linear-gradient(0deg, var(--color-8), var(--color-5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-aetherflame-2 {
+    font-family: "Marcellus", serif !important;
+    font-weight: 100 !important;
+    background: linear-gradient(0deg, var(--color-1), var(--color-4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-void {
+    font-family: "Marcellus", serif !important;
+    font-weight: 100 !important;
+    background: linear-gradient(0deg, white, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paths {
+    font-size: 1.5em !important;
+}
+
+.karma-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.karma-explaination {
+    font-family: "Marcellus", serif !important;
+    font-size: 1.4em;
+    max-width: 1000px;
+    color: var(--color-4) !important;
+    white-space: pre-line;
+}
+
+.question {
+    font-family: "Marcellus", serif !important;
+    font-size: 1.7em;
+    max-width: 1000px;
+    color: var(--color-4) !important;
+    white-space: pre-line;
+}
+
+.karma-chart-02 {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+}
+
+.view-my-path-button {
+    display: inline-block;
+    background: linear-gradient(0deg, var(--color-1), var(--color-4)) !important;
+    border-radius: 3px !important;
+    padding: 7px 7px !important;
+    text-decoration: none !important;
+    color: var(--background-dk);
+    font-family: "Marcellus", serif !important;
+    font-size: 1.5em !important;
+    text-align: center;
+    cursor: pointer;
+    transition: font-size 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.view-my-path-button:hover {
+    background: linear-gradient(0deg, var(--color-8), var(--color-5)) !important;
+    font-size: 1.7em !important;
+    box-shadow: 0px 0px 10px 3px var(--color-8-transparent) !important;
+}
+
+/* Karma Chart */
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 5em;
+    position: relative;
+}
+
+.bar {
+    width: 45%;
+    height: 15px;
+    background-color: black;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.aetherflame-progress {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg, var(--color-1), var(--color-4)) !important;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.netherflame-progress {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg, var(--color-8), var(--color-5)) !important;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.progress-num {
+    font-family: "Marcellus", serif !important;
+    font-size: 1.5em !important;
+    color: var(--color-4) !important;
+    padding: 0;
+    margin-top: 0;
+}
+
+.player-name {
+    font-size: 2em !important;
+}
+
+.path-chosen {
+    font-size: 1.5em !important;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.level {
+    font-size: 1.5em !important;
+}
+
+.lv-img {
+    width: 128px;
+    height: 128px;
+}
+
+/* Karma Chart - Prestige */
+
+.prestige-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 0;
+    position: relative;
+}
+
+.prestige-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    position: relative;
+}
+
+.prestige-img {
+    width: 256px;
+    height: 256px;
+}
+
+.go-back {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+/* Missions Page */
+
+.section-missions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: "Marcellus", serif !important;
+    font-size: 2em;
+    color: var(--color-3);
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    padding: 2em;
+}
+
+.missions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.mission-card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mission-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.mission-card span {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.mission-title {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.mission-description {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.mission-reward {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--color-4);
+}
+
+.aetherflame-box {
+    box-shadow: 0px 0px 10px 3px var(--color-1) !important;
+    color: var(--color-4);
+}
+
+.netherflame-box {
+    box-shadow: 0px 0px 10px 3px var(--color-8) !important;
+    color:var(--color-7);
+}
+
+.void-box {
+    box-shadow: 0px 0px 10px 3px white !important;
+    color: white;
+}
+
+/* Info Page */
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: "Marcellus", serif !important;
+    font-size: 2em;
+    color: var(--color-3);
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    padding: 2em;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-explaination {
+    text-align: center;
+    color: var(--color-4);
+}
+
+.info-explaination a {
+    text-decoration: underline;
+    color: var(--color-7);
+}
+
+.info-explaination a:hover {
+    color: var(--color-8);
+    text-shadow: var(--color-7) 0px 0px 5px;
+}
+
+.money {
+    color: yellowgreen;
+}
+
+.red {
+    color: var(--color-7);
+}
+
+.blue {
+    color: var(--color-2);
+}
+
+.yellow {
+    color: var(--color-5);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: var(--color-4) !important;
+    color: var(--background-dk);
+}
