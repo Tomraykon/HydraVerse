@@ -470,3 +470,15 @@ footer {
     background-color: var(--color-4) !important;
     color: var(--background-dk);
 }
+
+@media screen and (max-width: 768px) {
+    .nav-button {
+        font-size: 2em !important;
+        width: 300px;
+    }
+
+    .title {
+        font-size: 3em !important;
+    }
+
+}
