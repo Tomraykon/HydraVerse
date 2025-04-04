@@ -478,6 +478,7 @@ footer {
 /* Media Queries */
 
 @media screen and (max-width: 950px) {
+
     .nav-button {
         font-size: 1.3em !important;
         width: 200px;
@@ -536,4 +537,39 @@ footer {
         font-size: 0.6em;
     }
     
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .info-explaination h3 {
+        font-size: 0.8em;
+    }
+
+    .info-explaination p {
+        font-size: 0.6em;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+
+    .nav-button {
+        font-size: 1em !important;
+        width: 170px;
+    }
+
+    .title {
+        font-size: 5em !important;
+    }
+
+    .subtitle {
+        font-size: 3em !important;
+    }
+
+    .nav-button:hover {
+        transform: scale(1.1);
+    }
+
 }
