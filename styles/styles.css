@@ -13,6 +13,23 @@
 
     --color-5-transparent: rgba(238, 155, 0, 0.3);
     --color-8-transparent: rgba(155, 34, 38, 0.8);
+    --black-transparent: rgba(0, 0, 0, 0.5);
+}
+
+.money {
+    color: yellowgreen;
+}
+
+.red {
+    color: var(--color-7);
+}
+
+.blue {
+    color: var(--color-2);
+}
+
+.yellow {
+    color: var(--color-5);
 }
 
 body {
@@ -41,8 +58,8 @@ main {
 
 .header-line {
     font-size: 1.2em;
-    background-color: var(--color-4) !important;
-    color: var(--color-4);
+    background-color: var(--black-transparent) !important;
+    color: var(--black-transparent);
 }
 
 .title {
@@ -448,20 +465,47 @@ section h2 {
     text-shadow: var(--color-7) 0px 0px 5px;
 }
 
-.money {
-    color: yellowgreen;
+/* NewsWire Page */
+
+.section-newswire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: "Marcellus", serif !important;
+    font-size: 2em;
+    color: var(--color-3);
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    padding: 2em;
 }
 
-.red {
-    color: var(--color-7);
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 5px;
+    padding: 1em; 
+    margin-bottom: 1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.blue {
-    color: var(--color-2);
+.news-item h3 { 
+    font-size: 2em !important;
+    font-family: "Bebas Neue", serif !important;
+    margin-bottom: 0.5em;
 }
 
-.yellow {
-    color: var(--color-5);
+.news-item iframe {
+    display: flex;
+    width: 100vh;
+    height: 50vh;
+    border: solid 4px var(--color-2);
+    box-shadow: 0px 0px 10px 3px var(--color-2) !important;
+    margin-bottom: 1em;
 }
 
 /* Footer */
@@ -471,9 +515,10 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: "Marcellus", serif !important;
     font-size: 1.2em;
-    background-color: var(--color-4) !important;
-    color: var(--background-dk);
+    background-color: var(--black-transparent) !important;
+    color: var(--color-4);
 }
 
 /* Media Queries */
@@ -551,6 +596,11 @@ footer {
     .info-explaination p {
         font-size: 0.6em;
     }
+
+    .news-item iframe {
+        width: 16em;
+        height: 8em;
+    }
     
 }
 
@@ -569,8 +619,17 @@ footer {
         font-size: 3em !important;
     }
 
+    .news-item h3 { 
+        font-size: 1em !important;
+    }
+
     .nav-button:hover {
         transform: scale(1.1);
+    }
+
+    .news-item iframe {
+        width: 10em;
+        height: 5em;
     }
 
 }
