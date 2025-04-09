@@ -599,7 +599,7 @@ footer {
 
     .news-item iframe {
         width: 16em;
-        height: 8em;
+        height: 100%;
     }
     
 }
@@ -629,7 +629,7 @@ footer {
 
     .news-item iframe {
         width: 10em;
-        height: 5em;
+        height: 100%;
     }
 
 }
