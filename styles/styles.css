@@ -832,4 +832,28 @@ footer {
         margin-top: 30px;
     }
 
+    .news-item {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+     
+    .news-item h3 {
+        font-family: "Bebas Neue", serif !important;
+        font-size: 0.9em;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .news-item-date {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 0.4em;
+        margin-left: 20px;
+    }
+    
+    .news-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+    }    
 }
