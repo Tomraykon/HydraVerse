@@ -556,7 +556,6 @@ section h2 {
 .news-item img {
     width: 100%;
     height: auto;
-    border-radius: 5px 5px 0 0;
 }
 
 .news-item:hover {
@@ -854,6 +853,5 @@ footer {
     .news-item img {
         width: 100%;
         height: auto;
-        border-radius: 5px 5px 0 0;
     }    
 }
