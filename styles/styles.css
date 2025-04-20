@@ -52,6 +52,21 @@
     color: #FF00FF;
 }
 
+.gradient-violet {
+    background: linear-gradient( 180deg, #FF00FF, #6D4098);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 100;
+}
+
+.gradient-violet-2 {
+    font-family: "Bebas Neue", serif;
+    background: linear-gradient( 180deg, #FF00FF, #6D4098);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 100;
+}
+
 body {
     font-family: "Bebas Neue", serif !important;
     font-family: "Marcellus", serif;
@@ -188,7 +203,6 @@ section h2 {
 
 .gradient-netherflame-2 {
     font-family: "Marcellus", serif !important;
-    font-weight: 100 !important;
     background: linear-gradient(0deg, var(--color-8), var(--color-5));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -196,7 +210,6 @@ section h2 {
 
 .gradient-aetherflame-2 {
     font-family: "Marcellus", serif !important;
-    font-weight: 100 !important;
     background: linear-gradient(0deg, var(--color-1), var(--color-4));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -265,12 +278,12 @@ section h2 {
     font-size: 1.5em !important;
     text-align: center;
     cursor: pointer;
-    transition: font-size 0.2s ease, box-shadow 0.2s ease !important;
+    transition: all 0.2s ease !important;
 }
 
 .view-my-path-button:hover {
     background: linear-gradient(0deg, var(--color-8), var(--color-5)) !important;
-    font-size: 1.7em !important;
+    transform: scale(1.2);
     box-shadow: 0px 0px 10px 3px var(--color-8-transparent) !important;
 }
 
@@ -387,10 +400,9 @@ section h2 {
 
 .missions-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 80px 80px;
     padding: 20px;
 }
 
@@ -556,6 +568,7 @@ section h2 {
 .news-item img {
     width: 100%;
     height: auto;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .news-item:hover {
